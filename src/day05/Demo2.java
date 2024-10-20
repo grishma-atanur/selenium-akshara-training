@@ -8,7 +8,7 @@ public class Demo2 {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.get("file:///Users/viresh/Downloads/Sample2.html");
-
+		Thread.sleep(2000);
 		String title = driver.getTitle();
 		System.out.println(title);
 		
