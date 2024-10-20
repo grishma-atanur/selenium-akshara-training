@@ -16,6 +16,7 @@ public class Demo3 {
 		element.click();
 		Thread.sleep(2000);
 		driver.quit();
+		// this is example comment.
 	}
 
 }
