@@ -1,10 +1,11 @@
-package day07;
+package day08;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Demo2 {
+public class Demo4 {
+//use attribute in xpath
 	public static void goBack(WebDriver driver)
 	{
 		try 
@@ -18,17 +19,17 @@ public class Demo2 {
 		}
 	}
 	public static void main(String[] args) {
+
 		WebDriver driver=new ChromeDriver();
 		driver.get("file:///Users/viresh/Documents/Grishma/Akshara%20Training/Selenium/HTML%20files/Sample3.html");
-		driver.findElement(By.linkText("Google")).click();
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("/html/body/a[@id='a1']")).click();
 		goBack(driver);
-		driver.findElement(By.partialLinkText("Go")).click();
+		driver.findElement(By.xpath("//a[@id='a1']")).click();
 		goBack(driver);
-		driver.findElement(By.partialLinkText("oo")).click();
+		driver.findElement(By.xpath("//a[@id=\"a1\"]")).click();
 		goBack(driver);
-		driver.findElement(By.partialLinkText("Google")).click();
-		goBack(driver);
-		driver.findElement(By.partialLinkText("Ge")).click();
+		driver.quit();
 	}
 
 }
