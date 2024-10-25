@@ -1,5 +1,5 @@
 package day08;
-
+//find element by using id attribute(Attribute method)
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

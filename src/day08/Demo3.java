@@ -1,5 +1,5 @@
 package day08;
-
+//send keys(input) to text box
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

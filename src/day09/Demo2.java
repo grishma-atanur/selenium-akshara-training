@@ -14,7 +14,7 @@ public class Demo2 {
 		//maximize the browser
 		driver.manage().window().maximize();
 		Thread.sleep(1000);		//enter valid user name
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("admin");
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
 		//enter valid password
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
 		//click on go button
