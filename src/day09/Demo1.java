@@ -9,7 +9,7 @@ public class Demo1 {
 	public static void main(String[] args) throws InterruptedException {
 		//open the browser
 		WebDriver driver= new ChromeDriver();
-		//enter the url
+		//enter the url.
 		driver.get("https://pos.aksharatraining.in/pos/public/#");
 		//maximize the browser
 		driver.manage().window().maximize();
