@@ -1,5 +1,5 @@
 package day12;
-//getTag,getAttribute,getText
+//getTagname(),getAttribute(),getText()
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

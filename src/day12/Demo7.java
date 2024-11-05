@@ -1,5 +1,6 @@
 package day12;
-
+//entering input into element which is disabled-we get ElementNotInteractableException
+//so used try catch
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

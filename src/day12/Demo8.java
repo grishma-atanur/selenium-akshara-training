@@ -1,5 +1,6 @@
 package day12;
-//isSelected
+//isDisplayed()-verify is element displayed or hidden-if element is hidden we get 
+//exception so add try catch
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
