@@ -1,5 +1,6 @@
 package day14;
-//typecasting from webdriver to JavascriptExecutor
+//typecasting driver from webdriver to JavascriptExecutor
+//executeScript will send Javascript to Browser and Browser will execute javascript
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;

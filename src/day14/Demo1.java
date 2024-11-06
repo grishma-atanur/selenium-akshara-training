@@ -1,5 +1,5 @@
 package day14;
-
+//TakesScreenshot-in selenium we can take screenshot of only current visible area of the page
 import java.io.File;
 import java.io.IOException;
 

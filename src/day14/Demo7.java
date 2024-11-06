@@ -1,5 +1,5 @@
 package day14;
-
+//scroll to specific element-contact us
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public class Demo7 {
 		WebElement button = driver.findElement(By.xpath("//span[text()='Contact us']"));
 		
 		//get its y value
-		int y=button.getLocation().getY()-150;
+		int y=button.getLocation().getY()-150;//(-150 is adjustment)
 		//use y in JS
 		j.executeScript("window.scrollBy(0,"+y+")");
 

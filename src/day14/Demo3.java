@@ -1,5 +1,6 @@
 package day14;
 //executeScript() method from JavascriptExecutor interface
+//scrolldown vertically up and down 10times down and 5times up
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
