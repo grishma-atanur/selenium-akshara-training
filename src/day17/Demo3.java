@@ -1,5 +1,5 @@
 package day17;
-
+//How to handle alert popup-using driver.switchTo().alert()
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

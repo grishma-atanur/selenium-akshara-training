@@ -1,5 +1,6 @@
 package day17;
-
+//selenium supports Absolute path not relative path, but in mac couldnt use Absolute path
+//see Demo6 and Demo7
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

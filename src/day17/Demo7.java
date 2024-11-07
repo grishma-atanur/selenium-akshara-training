@@ -1,5 +1,6 @@
 package day17;
-//Relative  Path not supported in all laptops so convert Relative path Absolute path
+//Relative  Path not supported in all laptops
+//so convert Relative path Absolute path
 //getAbsolutepath()
 import java.io.File;
 

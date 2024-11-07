@@ -1,5 +1,5 @@
 package day17;
-
+//getting text on popuo by using getText()
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
