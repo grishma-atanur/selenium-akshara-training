@@ -1,5 +1,5 @@
 package day13;
-
+//Take Screenshot and store it in image file under current java project
 import java.io.File;
 import java.io.IOException;
 
