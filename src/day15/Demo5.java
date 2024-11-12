@@ -1,5 +1,7 @@
 package day15;
-
+//how do u right click on the element using selenium?
+//note: right click--> context click
+//when we right click we get list of options--> context menu
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,10 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class Demo5 {
-//how do u right click on the element using selenium?
+
 	public static void main(String[] args) throws InterruptedException {
-		//note: right click--> context click
-		//when we right click we get list of options--> context menu
+		
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
 		driver.manage().window().maximize();

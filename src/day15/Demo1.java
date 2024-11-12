@@ -1,5 +1,6 @@
 package day15;
-
+//Take screenshot with timestamp 10times byscrolling
+//scrollBy(),JavascriptExecutor,TakesScreenshot with timestamp, simpledateformat
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;

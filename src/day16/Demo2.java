@@ -1,5 +1,5 @@
 package day16;
-//Drag and Drop with delay
+//Drag and Drop with delay-clickAndHold(),moveToElement(),pause(Duration.ofSeconds(3)).release()
 import java.time.Duration;
 
 import org.openqa.selenium.By;
