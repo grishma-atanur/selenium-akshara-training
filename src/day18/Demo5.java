@@ -1,5 +1,5 @@
 package day18;
-
+//getWindowHandle(),getWindowHandles()
 import java.util.Set;
 
 import org.openqa.selenium.By;

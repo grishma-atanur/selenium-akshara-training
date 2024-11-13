@@ -1,5 +1,6 @@
 package day19;
-
+//Switching between tabs is same as switching between windows
+//driver.switchTo.window(windowHandles)
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -10,7 +11,8 @@ public class Demo1 {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
-		String parent=driver.getWindowHandle();
+		String parent=driver.getWindowHandle();//this variable is created
+		//to get back to parent window at last
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();

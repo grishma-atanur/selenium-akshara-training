@@ -5,7 +5,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//get title of all the windows
 public class Demo7 {
 
 	public static void main(String[] args) throws InterruptedException {
