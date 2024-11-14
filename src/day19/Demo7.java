@@ -15,7 +15,7 @@ public class Demo7 {
 		prefs.put("profile.default_content_setting_values.notifications", 1);//1-- allow 2- block
 		options.setExperimentalOption("prefs", prefs);
 		
-		WebDriver driver=new ChromeDriver(options);
+		WebDriver driver=new ChromeDriver(options);//select allow notification
 		driver.get("https://www.irctc.co.in/nget/train-search");
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
