@@ -1,5 +1,6 @@
 package day22;
-
+//we cannot use implicitlywait() other than findElement and findElements()
+//for other methods we need to use explicit wait(WebDriverWait() with Wait.until()
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;

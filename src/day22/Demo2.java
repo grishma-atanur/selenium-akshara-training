@@ -1,5 +1,5 @@
 package day22;
-
+//Instead of Thread.sleep() its better to use implicitlyWaitTimeout(Duration.ofSeconds())
 import java.time.Duration;
 
 import org.openqa.selenium.By;
