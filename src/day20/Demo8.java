@@ -1,5 +1,5 @@
 package day20;
-
+//getOptions() method similar to findElements
 import java.util.List;
 
 import org.openqa.selenium.By;

@@ -1,5 +1,6 @@
 package day20;
-
+//getWrappedElement() -use it only if u want to just print content of the list, it cannot 
+//be used with any other methods,otherwise go with Demo8
 import java.util.List;
 
 import org.openqa.selenium.By;

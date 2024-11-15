@@ -1,5 +1,5 @@
 package day20;
-
+//select class, selectByIndex, selectByValue, selectByVisibleText
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

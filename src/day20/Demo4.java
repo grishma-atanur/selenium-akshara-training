@@ -1,5 +1,5 @@
 package day20;
-
+//select specific option from autosuggesstions - example "selenium grid" or "selenium python" 
 import java.util.List;
 
 import org.openqa.selenium.By;
