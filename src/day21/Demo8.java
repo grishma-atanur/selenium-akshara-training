@@ -1,5 +1,6 @@
 package day21;
-
+//since we cannot sort webelements(coz webElements dont implement comparable and comparator interface),
+//we need to take text of each option and then sort
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

@@ -1,5 +1,6 @@
 package day22;
 //Instead of Thread.sleep() its better to use implicitlyWaitTimeout(Duration.ofSeconds())
+//PT-is polling timeout
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -11,12 +12,13 @@ public class Demo2 {
 	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver=new ChromeDriver();
-		Duration defaultTime = driver.manage().timeouts().getImplicitWaitTimeout();
+		Duration defaultTime = driver.manage().timeouts().getImplicitWaitTimeout();//gets defualt timeout of Implicitwait
 		System.out.println(defaultTime);
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//specify the timeout for each findElement/findElements
+		//(up to 10seconds until Element is found
 		
-		Duration modifiedTime = driver.manage().timeouts().getImplicitWaitTimeout();
+		Duration modifiedTime = driver.manage().timeouts().getImplicitWaitTimeout();//Get Defualt time of Implicittime after waittime
 		System.out.println(modifiedTime);
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

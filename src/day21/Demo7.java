@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Demo7 {
-//print content of list box in sorted order
+//print content of list box in sorted order(Normal list of string using array)
 	public static void main(String[] args) throws InterruptedException {
 		ArrayList<String> a=new ArrayList<String>();
 		a.add("BreakFast");

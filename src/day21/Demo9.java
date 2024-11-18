@@ -12,7 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Demo9 {
-//	print content of list box in sorted order
+//Print all the options along with thier occurence-using Map
+//for better understanding refer mapping programs in java class
 	public static void main(String[] args) {
 
 		 
@@ -46,8 +47,8 @@ public class Demo9 {
 			
 			System.out.println(map);
 			
-			//print only duplication option
-			//print only unique option
+			//Assignment-print only duplication option-already done in java class
+			//Assignment-print only unique option-already done in java class
 			
 		 driver.quit();
 	}

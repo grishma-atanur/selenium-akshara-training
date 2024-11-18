@@ -1,5 +1,5 @@
 package day21;
-//To show the exception-Its not multiselect list box
+//To show the exception-If we use deselect  method on single select list box
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

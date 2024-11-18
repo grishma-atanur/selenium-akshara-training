@@ -1,5 +1,7 @@
 package day21;
-
+//there is no selectAll() method in selenium so we need to take the
+//count of listbox first then use for loop to 
+//get all the options in listbox
 import java.util.List;
 
 import org.openqa.selenium.By;
