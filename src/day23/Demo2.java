@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo2 {
-	//Solution for NSEE:Solution 1
+	//Solution for NSEE:Solution 1: using Implicit wait
 	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//solution for NSEE
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//solution1 for NSEE
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.findElement(By.name("username")).sendKeys("admin");
 		

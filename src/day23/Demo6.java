@@ -12,20 +12,21 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Demo6 {
-	//Solution for NSEE:Solution 3
+	//Solution for NSEE:Solution 5 :  customised wait-->using for loop 
+	//with try and catch
 	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		for(int i=1;i<=50;i++)
 		{
-			try 
+			try //execute if no exception
 			{
 				driver.findElement(By.name("username")).sendKeys("admin");
 				System.out.println("Username TB is present:"+i);
 				break;
 			}
-			catch (Exception e) 
+			catch (Exception e) //execute if there is exception
 			{
 				System.out.println("Username TB is not present:"+i);
 			}

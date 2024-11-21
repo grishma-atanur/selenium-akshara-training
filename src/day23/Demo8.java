@@ -14,10 +14,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Demo8 {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
-		long start = System.currentTimeMillis();
+		long start = System.currentTimeMillis();//start the clock
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		long end = System.currentTimeMillis();
-		double diff=(end-start)/1000.0;
+		long end = System.currentTimeMillis();//stop the clock
+		double diff=(end-start)/1000.0;//milisecs to secs
 		System.out.println("Time taken to load the page is:"+diff+"s");
 		driver.quit();
 	}

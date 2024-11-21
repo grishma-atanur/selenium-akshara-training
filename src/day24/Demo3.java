@@ -1,5 +1,5 @@
 package day24;
-
+//Example for encapsulation in selenium
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,16 +7,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 class GooglePage
 {
-	private WebElement searchBox;
+	private WebElement searchBox;  //declarartion
 	
 	GooglePage(WebDriver driver)
 	{
-		searchBox = driver.findElement(By.id("APjFqb"));
+		searchBox = driver.findElement(By.id("APjFqb")); //initialization
 	}
 	
 	public void setSearchBox()
 	{
-		searchBox.sendKeys("akshara training");
+		searchBox.sendKeys("akshara training"); //utilization
 	}
 	
 }

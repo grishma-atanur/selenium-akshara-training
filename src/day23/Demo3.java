@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo3 {
-	//Solution for NSEE:Solution 2
+	//Solution for NSEE:Solution 2: Thread.sleep()
 	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver=new ChromeDriver();

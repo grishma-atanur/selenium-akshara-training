@@ -1,5 +1,5 @@
 package day24;
-
+//Encapsulation example-OrangeHRM-dynamically accepting Username and password
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -20,7 +20,7 @@ class OrangeLoginPage
 		loginButton=driver.findElement(By.xpath("//button[@type='submit']"));
 	}
 	
-	public void setUserName(String un)
+	public void setUserName(String un)//making the method to accept argument
 	{
 		userName.sendKeys(un);
 	}

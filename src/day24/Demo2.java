@@ -1,5 +1,5 @@
-package day24;
-
+//selenium example for encapsulation
+//encapsulation-declaration,initialisation,utilisation
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,8 @@ public class Demo2 {
 		
 //		driver.findElement(By.id("APjFqb")).sendKeys("akshara training");
 		
-//		WebElement searchBox = driver.findElement(By.id("APjFqb"));
+//		WebElement searchBox = driver.findElement(By.id("APjFqb"));-->Breaking this
+		 //into ecapsulation steps below-declaration,initialisation,utilisation
 //		searchBox.sendKeys("akshara training");
 		
 		WebElement searchBox;//declaration

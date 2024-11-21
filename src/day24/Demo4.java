@@ -1,5 +1,5 @@
 package day24;
-
+//encapsulation example for POS Login application
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,5 +1,5 @@
 package day24;
-//StaleElement Exception
+//StaleElement Exception-refresh page after finding element and before sending keys
 import java.time.Duration;
 
 import org.openqa.selenium.By;
