@@ -1,5 +1,6 @@
 package day25;
-
+//if we dont initialize that is in POM class we dont use constructor then we get
+//NULLPointer Exception
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,10 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 
 class GooglePage1
 {
-	@FindBy(id="APjFqb")
+	@FindBy(id="APjFqb")	//Declaration
 	private WebElement searchBox;
 	
-	public void setSearchBox()
+	//No initisation-No constructor
+	
+	public void setSearchBox()  //utilisation
 	{
 		searchBox.sendKeys("akshara training");
 	}

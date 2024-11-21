@@ -1,5 +1,5 @@
 package day25;
-
+//converting OrangeLoginPage.java into POM class to handle StaleElementReferenceException
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,13 +19,17 @@ public class OrangeLoginPage2
 	
 	OrangeLoginPage2(WebDriver driver)
 	{
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver,this);//instead of writing 3 findElements
+		//we can write just one initElements which initializes all 3 elements
+		
 		
 	}
 	
 	public void setUserName(String un)
 	{
-		userName.sendKeys(un);
+		userName.sendKeys(un);//Handled staleElementReferenceException-when control
+		//comes here it internally runs findElement once again after refresh
+		//to get new address of the element username
 	}
 	
 	public void setPassword(String pw)

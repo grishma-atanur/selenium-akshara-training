@@ -1,5 +1,5 @@
 package day25;
-
+//Handled StaleElementReferenceException-see OrangeLoginPage2
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;

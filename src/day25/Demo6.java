@@ -1,5 +1,6 @@
 package day25;
-
+//instead of initilising in main method, ts better to initilize in constructor 
+//of POM class
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,9 +13,9 @@ class GooglePage3
 	@FindBy(id="APjFqb")
 	private WebElement searchBox;
 	
-	GooglePage3(WebDriver driver)
+	GooglePage3(WebDriver driver)  
 	{
-		PageFactory.initElements(driver, this );
+		PageFactory.initElements(driver, this ); //Initilization
 	}
 	public void setSearchBox()
 	{
