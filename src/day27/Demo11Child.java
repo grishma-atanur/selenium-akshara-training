@@ -1,5 +1,5 @@
 package day27;
-
+//Demo10 program using inheritance
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 

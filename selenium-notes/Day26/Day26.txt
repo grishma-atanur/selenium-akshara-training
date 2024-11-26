@@ -23,4 +23,41 @@ TestNG
 1. single click -execute multiple scripts
 2. generate report
 
+Purpose of POM class:
+1)Storing the element
+2)Storing the method
+3)it is never meant for execution
+4)We will never write main method in POM class
+5)Main method should be written separately
+
+TestNG:We need a tool for if we click run button once it should run all the test
+//cases and also provide us with summary and detailed result
+
+How to install TestNG
+1)It comes as plugin for eclipse
+2)In Eclipse-->Go to Help-->Eclipse Market Place
+3)In Find-->Type "TestNG" & press enter
+4)Click on install-->Click on confirm
+5)click on "I Accept"-->Finish-->installation starts(see right bottom in eclipse)
+6)You get popup called "Trust Authorities"-->Click on SelectAll button
+7)Click-->Trust Selected
+8)Click on Restart(Restarts eclipse)
+9)Now TestNG is installed in eclipse but to use it we need to add
+TestNG to java project
+10)Right click on Java Project-->BuildPath(Make sure you are in package explorer)
+11)To be in Package Explorer-->Go to window-->Show View-->other-->Java-->Package Explorer
+12)Now go to Build Path-->Add libraries-->TestNG-->Next-->Finish
+
+*To Run  single program as TestNG test-->you need to refresh project-->you will get
+new folder called testOutput-->Emailable-report.html
+
+To run multiple testNG classes(test Scripts)--> 
+1)You need to right click on package
+2)Go to TestNG
+3)Convert to TestNG
+4)Finish(Generates testing.xml file)
+5)Right click on testing.xml file-->RunAs-->TestNG suite
+6)You can see the report in testOutput folder-->emailable-Report.html
+you will get special file called testNG.xml-->Right click on testNG.xml-->Run as TestNG suite
+
 

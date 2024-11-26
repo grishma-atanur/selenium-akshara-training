@@ -1,5 +1,6 @@
 package day27;
-
+//BeforeMethod-Means execute before every test method
+//AfterMethod-Means execute after every test method
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

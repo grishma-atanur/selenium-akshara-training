@@ -1,4 +1,7 @@
 package day26;
+//Handling alert popup in POM
+//In POM we handle alert POPUP as usual(Normal) but we just write 
+//the alert POPUP code in POM class
 
 import java.time.Duration;
 

@@ -1,5 +1,6 @@
 package day27;
-
+//Issue with Array is size is fixed, so TestNG will support Collection too.
+//ArrayList<String> is a collection-->we can increase or decrease size
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -17,7 +18,7 @@ public class Demo7 {
 		a.add("Banana");
 		a.add("Chiku");
 		a.add("Grapes");
-		Iterator<String> v = a.iterator();
+		Iterator<String> v = a.iterator();//required for looping purpose
 		return v;
 	}
 	@Test(dataProvider = "getData")

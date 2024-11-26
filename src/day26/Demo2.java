@@ -1,5 +1,6 @@
 package day26;
-
+//Normal way of handling alert popup
+//This program is conerted to POM in Demo3
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;

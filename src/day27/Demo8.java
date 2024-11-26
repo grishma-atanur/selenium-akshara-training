@@ -1,5 +1,6 @@
 package day27;
-
+//Number of iteration of test-->Depends on collection size
+//Number of arguments of test-->Depends on Array size
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

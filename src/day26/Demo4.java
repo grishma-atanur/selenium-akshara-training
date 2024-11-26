@@ -1,9 +1,11 @@
 package day26;
-
+//TestNG
+//TestNG class
 import org.testng.annotations.Test;
 
 public class Demo4 {
-	@Test
+	@Test //with this annotation we can run this program using RunAs-->TestNG test
+	//without main method
 	public void m1()
 	{
 		

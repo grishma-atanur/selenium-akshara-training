@@ -1,5 +1,5 @@
 package day27;
-
+//All annotation except @dataProvider
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;

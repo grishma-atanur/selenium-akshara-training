@@ -1,5 +1,6 @@
 package day27;
-
+//Number of rows=Number of iterations
+//Number of columns=Number of arguments
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
