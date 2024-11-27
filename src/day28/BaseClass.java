@@ -1,5 +1,9 @@
 package day28;
-
+//Dumped all the annotations in this class,
+//see sir notes
+//we cannot run this coz we dont have test method
+//Demo1 is child of BaseClass
+//testng5.xml
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

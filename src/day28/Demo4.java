@@ -22,9 +22,11 @@ public class Demo4 {
 //		else
 //		{
 //			Reporter.log("Fail: Google page is Not displayed",true);
-//			Assert.fail();
+//			Assert.fail(); //you are telling TestNG , In the TestNG report
+		//you change the status from Pass to Fail.
+		//When u use Assert,fail(), it will fail y throwing Assertion error.
 //		}
-		Assert.assertEquals(actual,expected);
+		Assert.assertEquals(actual,expected);//instead of if else block we can use this
 	
 		
 	}

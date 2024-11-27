@@ -1,5 +1,11 @@
 package day28;
-
+//testng6.xml
+//if we dont use priority,by default this code will execute in alphabetical order
+//if we use priority , we can control sequence of execution
+//pririty need not be consecutive
+//To support Regional Regression testing, TestNG uses concept called TestNG
+//Group.(see sir notes)-modify xml file accordingly
+//no matter what login logout should execute for every method, so we use always run
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +25,7 @@ public class Demo3 {
 		Reporter.log("logout",true);
 	}
 	
-	@Test(priority = 1,groups= {"customer","smoke"})
+	@Test(priority = 1,groups= {"customer","smoke"}) //yoy can add to two groups:customer and smoke
 	public void createCustomer()
 	{
 		Reporter.log("createCustomer",true);
@@ -45,7 +51,8 @@ public class Demo3 {
 	{
 		Reporter.log("editProduct",true);
 	}
-	@Test(priority = 6,groups= {"product"},enabled = false)
+	@Test(priority = 6,groups= {"product"},enabled = false)//Even if 
+	//include this method in Group dont run this code(enabled=false)
 	public void deleteProduct()
 	{
 		Reporter.log("deleteProduct",true);

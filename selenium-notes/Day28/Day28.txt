@@ -10,6 +10,36 @@
 <method>--->@BeforeMethod
 </method>-->@AfterMethod
 
+Note:1)When it comes to execution of xml file , it is always top to bottom
+2)Whenever TestNG come accross starting tag in xml file, it will execute respective
+before method
+3)Whenever TestNG come accross ending tag in xml file, it will execute respective
+after method
+4)Writing method in xml file is not mandatory,whether you write method tag or not 
+in xml file, it will execute.
+
+Program:day28-Demo3:
+//if we dont use priority,by default this code will execute in alphabetical order
+//if we use priority , we can control sequence of execution
+//pririty need not be consecutive
+
+Full Regression Testing: Imagine if we have 600 manual test cases ,
+we converted all of them and we got 600 tests.If We execute all the
+testcases then it is called Full Regression Testing.
+
+Regional Regression testing: Imagine in my product there are 4 modules(M1,M2,M3,M4)
+if we have 200 testcases in each module-->Total 800 test cases are there, but customer
+asked us to modify in M2 and we are 100% sure that this modification in no way
+affects M1, M3, M4,it is affecting only one  module M2 customer is in very hurry then 
+we will only test M2.But TestNG runs all the tests, that is where we need a concept called  TestNG Group.
+
+Interview Question: In TestNG , how to run only selected test cases?
+Answer) Using TestNG Groups-In this there are two choices:Include and Exclude(Xml file)
+
+Genraly for Test method we add priority and Group and for other method we add "always run" and "Enabled=false"
+
+TestNG Group concept is very important for Interview.
+
 TestNG groups
 1. include
 2. exclude
@@ -17,16 +47,26 @@ TestNG groups
 4. alwaysRun=true
 5. enabled=false
 
-How to u perform verification in TestNG
-using Assert 
+Assert.fail();-->You are telling TestNG, in TestNG report you change status from Pass To Fail.
+When u use Assert,fail(), it will fail y throwing Assertion error.
+
+Interview Question:How to u perform verification in TestNG
+Answer)using Assert.assertEquals(actual, expected)
 
 1. Assert is a class
 2. all its methods are static and overloaded
-3. assertEquals   assertNotEquals assertTrue    assertFalse  fail()
+3. assertEquals,   assertNotEquals, assertTrue,    assertFalse  fail(), ....lot more assert methods we have.
 
-
-Assert					SoftAssert
+Interview Question:Differnece between Assert and SoftAssert.
+Assert								SoftAssert
 exit current Test if failed		it will not exit current Test if failed
 all the methods are static		non-static method
 we dont call assertAll			we must call assertAll at the end
 
+Note:1)No difference between Assert and soft Assert if Test is passing,if test is failing then 
+only we can see difference.
+2)whenever you use SoftAssert, you must use assertAll(); otherwise SoftAssert doesnt work.
+3)Wherever there is basic and critical feature, we should use Assert, for other functionalities where
+it is not blocking we should use softAssert.
+4)There is no hard and fast rule when to use Assert and SoftAssert, we are the one to decide-for that we
+need to know the Application very well.

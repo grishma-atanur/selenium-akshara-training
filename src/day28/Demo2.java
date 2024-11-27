@@ -1,5 +1,6 @@
 package day28;
-
+//child of BaseClass
+//This is a TestNG class
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 

@@ -1,7 +1,8 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="product"/>
+			<include name="product"/>//search for method which is 
+			//included in product group pnly
 		</run>
 	</groups>
   <test  name="Test">

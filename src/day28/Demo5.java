@@ -19,17 +19,23 @@ public class Demo5 {
 	public void testB()
 	{
 		Reporter.log("StepB1",true);
-		Assert.assertEquals("hi","bye");//exit the test-it will not execute remaining code of the test
+		Assert.assertEquals("hi","bye");//if assert is failed-exit the test-
+		//it will not execute remaining code of the test
+		
 		Reporter.log("StepB2",true);
 	}
 	
 	@Test
 	public void testC()
 	{
+		//softassert is non-static method
 		Reporter.log("StepC1",true);
-		SoftAssert softAssert=new SoftAssert();
+		SoftAssert softAssert=new SoftAssert();//if assert is failed-doesnt exit the test-
+		//it will  execute remaining code of the test
+		
 		softAssert.assertEquals("hi","bye");
 		Reporter.log("StepC2",true);
-		softAssert.assertAll();
+		softAssert.assertAll();//whenever you use SoftAssert, you must use
+		//assertAll(); otherwise SoftAssert doesnt work.
 	}
 }
