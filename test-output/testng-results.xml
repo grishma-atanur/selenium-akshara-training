@@ -1,181 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Open Chrome Browser]]>
+      <![CDATA[Open Edge Browser in Akashara Grid]]>
     </line>
     <line>
-      <![CDATA[Open Edge Browser]]>
+      <![CDATA[Open Chrome Browser in Saucelabs Grid]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-27T15:25:32 CET" name="Suite" finished-at="2024-11-27T15:25:57 CET" duration-ms="25176">
+  <suite started-at="2024-11-28T15:41:07 CET" name="Suite" finished-at="2024-11-28T15:41:58 CET" duration-ms="51431">
     <groups>
     </groups>
-    <test started-at="2024-11-27T15:25:32 CET" name="TestME" finished-at="2024-11-27T15:25:54 CET" duration-ms="22047">
-      <class name="day29.Demo5">
-        <test-method signature="testA(java.lang.String)[pri:0, instance:day29.Demo5@7a4ccb53]" started-at="2024-11-27T15:25:32 CET" name="testA" finished-at="2024-11-27T15:25:54 CET" duration-ms="21937" status="FAIL">
+    <test started-at="2024-11-28T15:41:07 CET" name="TestLG" finished-at="2024-11-28T15:41:33 CET" duration-ms="25847">
+      <class name="day30.Demo2">
+        <test-method signature="testA(java.lang.String,java.lang.String)[pri:0, instance:day30.Demo2@fdefd3f]" started-at="2024-11-28T15:41:07 CET" name="testA" finished-at="2024-11-28T15:41:33 CET" duration-ms="25701" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[LG]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[edge]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=131.0.2903.70)
-Build info: version: '4.25.0', revision: '030fcf7918'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.7', java.version: '17.0.13'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c9d48c211429ef54f04528909cc9a365, findElement {value=input-username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.70, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53808}, msedge: {msedgedriverVersion: 131.0.2903.72 (738158b05a90..., userDataDir: /var/folders/xd/4rtqt7m55y1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53808/devtoo..., se:cdpVersion: 131.0.2903.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9d48c211429ef54f04528909cc9a365]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=131.0.2903.70)
-Build info: version: '4.25.0', revision: '030fcf7918'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.7', java.version: '17.0.13'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c9d48c211429ef54f04528909cc9a365, findElement {value=input-username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 131.0.2903.70, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53808}, msedge: {msedgedriverVersion: 131.0.2903.72 (738158b05a90..., userDataDir: /var/folders/xd/4rtqt7m55y1...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53808/devtoo..., se:cdpVersion: 131.0.2903.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9d48c211429ef54f04528909cc9a365
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at day29.Demo5.testA(Demo5.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
             <line>
-              <![CDATA[Open Edge Browser]]>
+              <![CDATA[Open Edge Browser in Akashara Grid]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-      </class> <!-- day29.Demo5 -->
-    </test> <!-- TestME -->
-    <test started-at="2024-11-27T15:25:32 CET" name="TestGC" finished-at="2024-11-27T15:25:57 CET" duration-ms="25176">
-      <class name="day29.Demo5">
-        <test-method signature="testA(java.lang.String)[pri:0, instance:day29.Demo5@1a0dcaa]" started-at="2024-11-27T15:25:32 CET" name="testA" finished-at="2024-11-27T15:25:57 CET" duration-ms="25088" status="FAIL">
+      </class> <!-- day30.Demo2 -->
+    </test> <!-- TestLG -->
+    <test started-at="2024-11-28T15:41:33 CET" name="TestSG" finished-at="2024-11-28T15:41:58 CET" duration-ms="25026">
+      <class name="day30.Demo2">
+        <test-method signature="testA(java.lang.String,java.lang.String)[pri:0, instance:day30.Demo2@56a6d5a6]" started-at="2024-11-28T15:41:33 CET" name="testA" finished-at="2024-11-28T15:41:58 CET" duration-ms="25009" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[SG]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.86)
-Build info: version: '4.25.0', revision: '030fcf7918'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.7', java.version: '17.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f222d0caf1eb9d93587da2e9735c5bb3, findElement {value=input-username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/xd/4rtqt7m55y1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f222d0caf1eb9d93587da2e9735c5bb3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.86)
-Build info: version: '4.25.0', revision: '030fcf7918'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.7', java.version: '17.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f222d0caf1eb9d93587da2e9735c5bb3, findElement {value=input-username, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/xd/4rtqt7m55y1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:53803/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f222d0caf1eb9d93587da2e9735c5bb3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at day29.Demo5.testA(Demo5.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
             <line>
-              <![CDATA[Open Chrome Browser]]>
+              <![CDATA[Open Chrome Browser in Saucelabs Grid]]>
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-      </class> <!-- day29.Demo5 -->
-    </test> <!-- TestGC -->
+      </class> <!-- day30.Demo2 -->
+    </test> <!-- TestSG -->
   </suite> <!-- Suite -->
 </testng-results>
