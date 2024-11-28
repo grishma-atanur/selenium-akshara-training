@@ -1,3 +1,5 @@
+<!-- It will create 2 Threads,1st thread is responsible for executing 1st test-->
+<!-- 2nd thread is responsible for executing 2nd test-->
 <suite parallel="tests" name="Suite">
   <test name="TestGC">
 	<parameter name="browser" value="chrome"/>

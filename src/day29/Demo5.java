@@ -1,5 +1,9 @@
 package day29;
 //Parallel Execution or cross Browser Testing or Browser compatibility testing
+//using parallel option available in TestNG-->Right click on Test class(.java class)
+//-->select "Convert to TestNG"-->In Parallel Mode-->Select "tests"(this is test block in xml file)
+//If u run this directly here, it will pick optional value
+//If u run the xml file, it will take parameter from xml file
 //testng10.xml
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
@@ -23,7 +27,7 @@ public class Demo5 {
 		{
 			Reporter.log("Open Chrome Browser",true);
 			driver=new ChromeDriver();
-			driver.manage().window().setPosition(new Point(800,10));
+			driver.manage().window().setPosition(new Point(800,10));//Move browser--move to right side
 		}
 		else
 		{

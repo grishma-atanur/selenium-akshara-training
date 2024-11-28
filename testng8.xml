@@ -1,5 +1,7 @@
 <suite name="Suite">
   <test name="Test">
+	  <!-- If we comment parameter,it will not create variable with name city -->
+	  <!-- It will call Demo3-->
 <!--	<parameter name="city" value="Agra"/>-->
     <classes>
       <class name="day29.Demo3"/>

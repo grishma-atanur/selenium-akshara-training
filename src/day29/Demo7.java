@@ -1,5 +1,5 @@
 package day29;
-
+//Username and Access key will be found in User Setting in Saucelabs
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -10,7 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
+//Below code is copied from sauceLabs-->Go to SauceLabs-->Automated-->Pl-
+//atform Configurator-->select OS, Browser , Selenium4--code will be generated-->
+//scroll down-->Copy to clipboard-paste it in script-->modify accordingly
 public class Demo7 {
 
 	public static void main(String[] args) throws MalformedURLException {
@@ -24,7 +26,7 @@ public class Demo7 {
 		sauceOptions.put("build", "B115");
 		sauceOptions.put("name", "TestAkshara");
 		browserOptions.setCapability("sauce:options", sauceOptions);
-
+		//start the session
 		URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
 		WebDriver driver = new RemoteWebDriver(url, browserOptions);
 		

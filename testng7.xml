@@ -1,6 +1,11 @@
+<!-- Before you click Run, TestNG creates a variable with name called city-->
+<!-- and it will assign value as Agra-->
 <suite name="Suite">
   <test name="Test">
-	<parameter name="city" value="Agra"/>
+<!-- Creates a variable with name city and assigns its value as Agra-->	 
+<!-- It will send this variable to Demo2--> 
+<!-- In Demo2 it is received in line no.10, then it is send to method-->
+	<parameter name="city" value="Agra"/>  
     <classes>
       <class name="day29.Demo2"/>
     </classes>

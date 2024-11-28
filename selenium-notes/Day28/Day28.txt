@@ -48,7 +48,8 @@ TestNG groups
 5. enabled=false
 
 Assert.fail();-->You are telling TestNG, in TestNG report you change status from Pass To Fail.
-When u use Assert,fail(), it will fail y throwing Assertion error.
+When u use Assert,fail(), it will fail by throwing Assertion error.When u use Assert.fail(), the statements
+following Assert.fail(); in the same method will not execute,but every else following will get executed.
 
 Interview Question:How to u perform verification in TestNG
 Answer)using Assert.assertEquals(actual, expected)

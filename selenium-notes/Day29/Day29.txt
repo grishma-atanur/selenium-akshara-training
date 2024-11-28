@@ -1,27 +1,53 @@
 How to execute Test2 only if Test1 is PASSED?
 using dependsOnMethods
 
+Interview Question:How to create a dependency in TestNG?
+ Answer)using dependsOnMethods
+
 Note: if Test1 is failed, then Test2 will be reported as SKIPPED
 
-Can we send data from testing suite to testing class?
-yes-> using parameter
+
+Question)Can we send data from testing suite(Testng.xml) to testing class(TestNG class)?
+Answer)yes-> using parameter
+
+Note:Once you use parameter,you cannot run TestNG class directly we will get error
+If u use parameter, always Run Xml file 
 
 If we use @optional("value") for method arg then if the parameter value is not specified it used optional value
+i.e if parameter is not specified in xml file or you directlt try to execute it then it uses @optional("value")
+
+Limitation of TestNG parameter is , it only supports String datatype.
 
 
 How to run multiple scripts in parallel?
-using parallel option available in TestNG
+using parallel option available in TestNG-->Right click on Test class(.java class)
+-->select "Convert to TestNG"-->In Parallel Mode-->Select "tests"(this is test block in xml file)
 
-mode:
+mode:(options in Parallel mode)
 1.none
 2.methods
 3.classes
 4.tests
 
 ---> Cross Browser testing / browser compatibility testing
-Selenium Grid
-to execute test script 
+
+Selenium Grid:Imagine, you have a test script that has to be run in different 
+OS(Windows 11, windows12,Mac V8, Mac 9, Linux V9, Linus 10) with different Browser.
+Then each time you need to install JDK, install eclipse , configure copy paste and run in all the machines and run it,which
+is not feasible.So they came up with Selenium Grid, in Selenium Grid, we will
+connect all the computers with selenium Grid, we dont copy paste the script in all machines,
+script will be present in our local system, we just need to click run button
+in local system, it will connect to all the remote systems(open the Browser in remote systems, enter the url).
+It will execute the script in all remote systems and send back the result to 
+Local System(one consolidated result).
+But we don not have multiple computers to use selenium Grid, so we take these 
+computers for rent.Renting companies like Browser stack and saucelabs provide devices for rent(virtual and real devices also).
+Selenium is also installed in these devices,all u need to do is just give the url and click Run button.
+
+To go selenium website:selenium.dev
 
 login to https://saucelabs.com
+In saucelabs.com->login using gmailid->go to account-->Go to user setting-->scroll
+down till Ondemand URL->copy the url and paste it in script. 
 
 
