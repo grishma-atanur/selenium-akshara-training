@@ -1,5 +1,7 @@
 package day30;
-
+//similar to day29-->Demo5-Parallel execution
+//testng11
+//you should see the result in Saucelabs and Command Prompt(Local Grid)
 import java.net.URL;
 
 import org.openqa.selenium.By;
@@ -14,9 +16,9 @@ import org.testng.annotations.Test;
 public class Demo2 {
 	//LG---> Local Grid
 	//SG-->Saucelabs Grid
-	String LG="http://192.168.129.7:4444";
-	String SG="https://oauth-atanur.grishma-8a168:67b7ea2b-fbc3-4d71-8f04-0fde1233d918@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
-	
+	String LG="http://192.168.129.7:4444"; //(Remote system 1)
+	String SG="https://oauth-atanur.grishma-8a168:67b7ea2b-fbc3-4d71-8f04-0fde1233d918@ondemand.eu-central-1.saucelabs.com:443/wd/hub";//(Remote system 2)
+	//we need to decide which system we need to use and which browser to use
 	@Parameters({"system","browser"})
 	@Test
 	public void testA(String system, String browser) throws Exception
@@ -26,8 +28,8 @@ public class Demo2 {
 		String sys="";
 		if(system.equals("LG"))
 		{
-			sys="Akashara Grid";
-			gridURL=new URL(LG);
+			sys="Akashara Grid";//Our Grid(Local Grid)
+			gridURL=new URL(LG); //creates URL object
 		}
 		else
 		{

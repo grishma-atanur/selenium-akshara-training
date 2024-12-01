@@ -44,7 +44,9 @@ But we don not have multiple computers to use selenium Grid, so we take these
 computers for rent.Renting companies like Browser stack and saucelabs provide devices for rent(virtual and real devices also).
 Selenium is also installed in these devices,all u need to do is just give the url and click Run button.
 
-To go selenium website:selenium.dev
+What is the use of Selenium Grid?
+Answer)We can execute the script on Remote Computer.
+
 
 login to https://saucelabs.com
 In saucelabs.com->login using gmailid->go to account-->Go to user setting-->scroll

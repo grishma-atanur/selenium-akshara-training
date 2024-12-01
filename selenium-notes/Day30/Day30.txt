@@ -1,49 +1,120 @@
-We should setup selenium gird
-2 types of system
-1. local system-- Dev & Test
+Last class we use SauceLabs for Remote Computers.
+Companies that provide Remote computers-->Sauce Labs, Browser Stack.But the issue with these is
+they are 3rd party tools , it requires our Web Application to be exposed in thier platform.In many companies 
+they will not agree to use these tools for security reasons, in such cases we should set Selenium Grid.
+In Selenium Grid we have 2 types of system:
+1. local system--> for Dev & Test:In local We require:
 	a. JDK
 	b. Eclipse
 	c. selenium jar
 	d. TestNG
 	e. automation script
-        f. browser
+    f. browser
 	g. web app
+	
+	Note:If we use Selenium Grid, Browser and Web Application will be in Remote System.
 
-2. remote system--> only for execution
+2. remote system--> only for execution: In Remote system We require:
 	a. JDK
 	b. selenium jar
 	c. browser
 	d. web app
+	
+To go selenium website:selenium.dev
 
-Steps to setup selenium grid
-1. in remote system create a folder
-2. copy paste selenium jar file
-3. open the cmd
-4. execute java -jar selenium-server-4.25.0.jar standalone
-5. it will display a message "Started Selenium Standalone"
-6. at the end it will display selenium grid URL--> http://192.168.29.187:4444
-7. copy paste selenium grid url into a browser address bar to get selenium grid page
+Note: coz Browser stack and SauceLabs are not good for security reasons and we cant purchase many laptops, sir showed steps how to do it in our own Laptop(
+how to create remote compueter in our own laptop),but in reality it will be done in different Computer.
+
+Eclipse-Local System.
+Command Prompt represents Remote System :remote folder
+In reality, eclipse will be in different computer and Command Prompt(Remote System ) will be in different computer. 
+
+Q)How do you check in the remote computer Java is installed or not?
+A) java -version
+
+
+To create Local system on our own in our Local system-->Steps to setup selenium grid:
+1. In remote system create a folder called remote.
+2. copy paste selenium jar file(selenium jar file is present in eclipse in "lib" folder.
+3. open the cmd prompt(In windows-Go inside folder where jar file is present, click on the Address bar->type cmd-->enter)
+Note:Before entering below command, make sure cmd prompt is in remote directory
+To change directory->use "cd" command.
+4. In cmd prompt-->execute--> java -jar selenium-server-4.25.0.jar standalone(Press Tab for AutoCompletion-->used to start 
+	selenium server in standalone mode.
+5. After it runs fully,it will display a message "Started Selenium Standalone",
+	at the end it will also display selenium grid URL--> http://192.168.29.187:4444(click on this URL it will
+	open Selenium Website)or (copy the URL and paste it in Browser).
+7. Right click-->Run As-->Java Application
+8.Request will be sent to command prompt-->Browser will open.
+9.This means Selenium Grid will be running in Remote computer.
+Note: Never close Terminal, if u close Terminal, Grid will be shut down.
+10.After terminating, Grid will be running(see Selenium Grid) but sessions will be closed.
+The purpose of above steps is to check whether Grid is working or not.
+
+Note: In free version of SauceLabs, at a time it allows only one Remote system to run.
+In paid version, we can use many Remote systems.
+
+
+When the new version of selenium is released, we would never come to know untill
+we go to seleniumm.dev and check in downloads for selenium jar file.
+And if we know we have to download jar file , We have to copy paste it in "lib" folder of project and add it to build path
+and remove the older version.everything we need to do manually.
+Q)Is there a way we can update the jar file automatically?
+A)Yes, we have an option called MAVEN-It will automatically update the jar file.
+
+Purpose of Maven: Keep updating the jar file.
+
+we need to do it for every release.so we dont want to do this.We want these jar files to be updated automatically.
+
 
 Maven
 1. in Eclipse File->new --> maven project
 2. select the check boc 'create simple project'
 3. click Next
 4. specify groupid and artifact id
-5. click finish
+	Note: In Maven, GroupID means Organisation name and
+	artifact id will be our Project name.
+5. Version is default
+6. click finish
 
-pom.xml--> project object model 
+In Maven-->pom.xml--> project object model -->Used to Run Maven Project.
+			TestNg.xml is used to run entire TestNG project.
 
-main--> dev
-test--> testing
+In maven we have:src/main/java-->used for development.
+				 src/test/java--> used for testing
+				 
+				  src/test/java--->Automation script code will be written here.
+				  
+				  src/test/resources-->Supporting file should be here.
 
 
+Now, I want to add jar file in Maven-->Open POM.xml  
 How to specify the jar file in Maven?
 1. open pom.xml
+	At the bottom , you will see tabs.
 2. click on dependencies tab
 3. click on add
-4. specify group id, artifact id and version 
+4. specify group id, artifact id and version (Give details of the jarfile you want-
+	example if you want selenium jar file then give details of selenium jar file)
+	Note: a)To get the information of Selenium jar file-In Google-->search for-->Selenium Maven 
+		  b)Click on Maven Repository(Offical Website of Maven)
+		  c)Click on Selenium Java
+		  d)Click on latest version  which is at the top
+		  e)Scroll down, you will see POM.xml code
+		  f)You need to put that code in our POM.xml file
+		  h)You have to go to dependencies tab and manually type-Gruop Id, Artifact id, version
+		  	from the POM.xml that you got in Maven Repository(Offical Website of Maven).
+		  i)Click on OK
+		  j)Save it.
+		  k)After build is over(Right bottom corner)We will get one new option called
+		  	Maven Dependecies.
+		  L)Now if we go to our POM.xml there will changes added(Dependencies will be added)
+		  H)Instead of doing this way, we can directly copy paste from offical website but we need toadd extra tag
+		  called "<dependencies>"
 5. click ok
 6. save it
+
+Note: Jar file will be under Maven Dependencies but it will be piece by piece.
 
 
 

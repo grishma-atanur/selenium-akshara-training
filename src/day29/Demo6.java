@@ -18,8 +18,8 @@ public class Demo6 {
 		URL url=new URL(gridURL);
 		ChromeOptions options=new ChromeOptions();
 		
-		WebDriver driver=new RemoteWebDriver(url,options);//Open Browser in Remote Computer
-		driver.get("https://aksharatraining.com/");
+		WebDriver driver=new RemoteWebDriver(url,options);//Open Browser in Remote Computer(in sauce Labs)
+		driver.get("https://aksharatraining.com/");//enter the URL in Browser
 		System.out.println(driver.getTitle());
 		driver.quit();
 
