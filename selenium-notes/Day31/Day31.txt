@@ -1,0 +1,106 @@
+Maven-->is a dependency tool 
+
+dependency->jar file that we add required to execute the project 
+
+Maven is executed using POM.xml
+
+pom.xml--> project object model
+workspace is->in Documents->Grishma->workspace
+In POM.xml we specify the dependency using 3 information:
+group id
+artifact id
+version
+
+Under-->b115maven-->src/test/java-->create a package:day31
+Demo1->Add TestNG maven->Google TestNG maven-->Add in POM.xml
+Right click on Demo1-->TestNG-->Convert to TestNG-->Creates testng.xml-->>Run this
+file as TestNG suite
+
+Steps to add Dependency:
+1)In GooGle serach for Dependendcy-Example: TestNG Maven
+2)Click on link :Example: org.testng - Maven Repository
+3)Click on latest version
+4)Copy Group ID, Artifact ID and Version
+5)Go to Eclipse->Open POM.xml--Go to Dependencies tab
+6)Click on Add
+7)Specify Group id, Artifact id and Version.
+8)Click on Ok.-->save it 
+
+Note:
+run pom.xml----> To only update jar files
+run testng.xml-->To  only execute test classes
+Everytime, we need to run POM.xml and also testng.xml(Once to execute test classes
+and once to Update jar Files coz we want to update and run it which is very irritating).
+So is there a way to integrate it-->means we should be able to
+run any one of the xml file-->It should update the jar file also and it should execute also.
+So what is possible is We can integrate TestNG into POM.xml.
+So POM.xml-->Updates the jar files and it also internally runs TestNG.xml and
+TestNG.xml internally runs TestNG classes.
+So from now on, we just need to run POM-->for that we need to use plugin.
+Plugin-->will help to integrate TestNG.xml with POM.xml.
+Name of the plugin is called as Surefire Plugin.
+
+Google: surefire plugin TestNG.xml
+plugin --> integrate testing.xml with pom.xml
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+under-->Using Suite XML Files
+
+Go to POM.xml-->last tab-->before <dependencies> tag-->add <build> tag
+-->Within <build> tag -->Add <plugins> tag-->now in this website-->
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+under-->Using Suite XML Files-->copy line from 3 to 12 -->Paste it in POM.xml between <plugins> tag.-->
+save it.
+There will be only one POM.xml but there can be many TestNG.xml.
+To Run POM.xml-->Right click on POM.xml-->Run As-->Maven Test.
+Note:Maven works only if there is good interenet connection.
+
+
+To see the result:
+if we run testing.xml  , result will be in test-output folder
+if we run pom.xml, result will be in target folder-->surefile-reports-->emailable-report.html
+
+Handling Excel file
+1)Directly under maven project-->b115maven->Create a folder called "data"
+2)Create one excel file in ur personal system called-->Book1.xlsx
+3)Copy Book1.xlsx under data folder in eclipse
+4)If we want to handle xlsx file(excel file)-->We need poi dependency-->
+5)For that search for-->POI maven-->https://mvnrepository.com/artifact/org.apache.poi/poi/5.3.0
+6)Copy the Dependency
+7)Paste it between <dependencies> tag
+8)Unfortunately for excel file , we need to add 2 dependencies
+9)same as previos dependency only thing wee need to add "poi-ooxml"
+in artifact id.
+10)Save the Xml and close it.
+
+Libraries are also called jar files.
+
+To see all the dependencies in POM.xml-->Go to 
+2nd tab in POM.xml-->Dependencies.
+
+WorkbookFactory-->To read the data we use the class called WorkBookFactory-->
+within that we have amethod called "create".
+
+Demo2:Reading from Excel file.
+Demo3: Write into Excel file.
+
+Note: Refresh the project if u are not getting any newly created filed.
+
+Homework: read data from multiple rows and col of excel sheet
+hint: use nested for loop 
+
+How to open excel file in eclipse-->Right click on excel file
+-->Properties-->Click button at the end of Location
+
+Note:To read Google sheets we need Google API.
+
+
+
+
+
+
+
+
+
+
+
+
