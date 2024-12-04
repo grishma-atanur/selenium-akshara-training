@@ -1,0 +1,81 @@
+Disadvantage of declaring WebDriver as static:
+1)If the WebDriver is Static(Single copy of variable), Parallel execution is not possible.
+So we will declare WebDriver as non-static.
+--------------------------------------------------------------------------------------
+Creating new Workspace:
+1)Create a folder in local system:b115WS
+2)To save all the previous programs from previous workspace:
+  a)Go to Eclipse.
+  b)Rght click on Project
+  c)Go to Properties
+  d)under Resuorce
+  e)Copy the Location and save it -where the previuos Programs are save
+  	for future Reference.-->Find this in Selenium Folder.
+3)To switch to other workspace-->Go to eclipse-->File-->Other
+4)It will ask for Directory location.
+5)Browse and select the folder that we just created-->b115WS
+6)Click on Launch.
+7)Now create a Maven Project-->
+8)In Eclipse-->File-->New-->Maven Project-->Check box-->Create a simple project.
+9)Give Group id--as akshara
+10)artifact id-->b115afw
+   afw is automation frame work.
+11)Click on finish.
+12)Add all the dependecies in POM.xml from prvious workspace to this Workspace in POM.xml
+13)Save it and close it.
+-----------------------------------------------------------------------------------
+1)In Maven Project-->We should write java project in src/test/java.
+2)In scr/test/java-->Create folders called generic,page, script.
+3)Under generic-->Create a java class called BaseTest.
+4)Under script folder-->Create test class called Demotest.java.
+5)Covert Demotest.java to TestNG.xml
+6)Run TestNG.xml as TestNG Suite
+7)use the package tag in TestNG.xml-->it runs all the scripts present inside the 
+script package.
+8)In POM.xml surefile plugin is already added.
+9)Right on POM.xml -->Run As -->Maven Test.
+10)Sequence to Run-->First Run Demotest.java-->Then Run TestnG.xml-->Then Run POM.xml
+11)If you Run POM.xml-->You will see result in target folder-surefire report-->Emailable-report.html
+---------------------------------------------------------------------------------
+It not good idea to hardcode everything, there are 3 ways:
+1)First-->We can take input from TestNG.xml-->using parameters.
+2)Second-->We can take data from excel file .
+3)Third-->property file-->Very popular,in Property file we store Key-value pair,internally
+	it is a MAP actually.
+4)To create property file-->In eclipse-->Right click on project-->New-->File-->
+give name-->config.properties
+5)Property file is simple text file where values are stored based on the key.
+6)Copy paste property file directly under project.
+7)How to read property file-->Create Demo3 under script package-->write necessary code to read property file
+Note: Hashtable is parent of Property
+
+Properties  =new Propeerties();
+p.load(new FileInputStream(./config.properties)//In current java project loadconfig.properties
+
+Note: If we make changes in config.properties-->We dont need to recompile java program all the time.
+-----------------------------------------------------------------------------------
+I want to create a method so that i can use it again and again:
+1)Under generic-->Create a class called Utility
+2)If a method is accessing any non-static variable of a class-->Then only it
+should be declared as non-static.
+
+
+general guideline to  develop a method:
+1. do not hardcode any input--> use method argument
+2. do not throw any exception - use try-catch
+3. in catch  block printStackTrace
+4. by default it should be static
+5. if its getter method , return a value--If u use try ,catch return in both try and catch block
+  or write common return statement to both try and catch.
+
+
+
+
+
+
+
+
+
+home work
+1. add firefox , safari ... browser code
+2. print details each step in BaseTest
